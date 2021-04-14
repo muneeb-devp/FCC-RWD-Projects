@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: rgba(58, 58, 158, 0.8);
+  font-family: "Poppins";
+  color: #f3f3f3;
+}
+
+header {
+  margin: 1em;
+}
+
+#title {
+  padding: 0.1em;
+  text-align: center;
+  font-weight: 300;
+}
+
+#description {
+  text-align: center;
+  font-weight: 200;
+  font-size: 1em;
+  font-style: italic;
+  text-shadow: 1px 1px 1px rgb(0 0 0 / 40%);
+}
+
+.form {
+  background-color: rgba(27, 27, 50, 0.8);
+  width: 55%;
+  margin: 2em auto;
+  border-radius: 0.2em;
+}
+
+#survey-form {
+  padding: 3em;
+}
+
+#survey-form input[type="text"],
+#survey-form input[type="email"],
+#survey-form input[type="number"],
+#survey-form select {
+  width: 100%;
+  height: 2.375rem;
+  padding: 0.25rem;
+  margin-top: 0.6em;
+  border-radius: 0.2em;
+  color: #495057;
+  border: 1px solid #ced4da;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+#survey-form input:focus,
+#survey-form select:focus {
+  outline: 0;
+}
+
+#survey-form input[type="radio"] {
+  padding: 2em;
+}
+
+#survey-form label {
+  display: block;
+}
+
+@media screen and (max-width: 760px) {
+  .form {
+    width: 90%;
+  }
+}
+
+#survey-form label textarea {
+  width: 100%;
+  min-height: 100px;
+  padding: 0.8em;
+  font-size: 1.3rem;
+  margin-top: 1.2em;
+}
+
+#survey-form button[type="submit"] {
+  width: 100%;
+  min-height: 2.4rem;
+  padding: 0.7em;
+  color: white;
+  font-size: 1.2rem;
+  background-color: #37af65;
+  border: 0;
+  cursor: pointer;
+  border-radius: 0.1em;
+}

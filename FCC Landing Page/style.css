@@ -1,0 +1,243 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans";
+  background: #eee;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#nav-bar {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  z-index: 3;
+  background-color: #eee;
+}
+
+#nav-bar ul {
+  display: flex;
+}
+
+#nav-bar img {
+  width: 100%;
+  height: 100%;
+  max-width: 300px;
+  padding: 1.5em;
+}
+
+#nav-bar ul li {
+  list-style-type: none;
+}
+
+#nav-bar ul li a {
+  text-decoration: none;
+  display: block;
+  padding: 1.5em;
+  color: #333;
+  font-family: "Roboto";
+  font-weight: 600;
+}
+
+#header h1 {
+  /* text-align: center; */
+  margin-top: 5%;
+  font-weight: 600;
+  padding: 0.6em;
+  font-size: 1.5rem;
+}
+
+#email {
+  padding: 0.3em;
+  width: 17rem;
+  margin: 0.3em;
+}
+
+#submit {
+  font-size: 1.2rem;
+  font-weight: 700;
+  padding: 0.5em 1.2em;
+  background-color: #f1c40f;
+  border: 0;
+  border-radius: 0.3em;
+  margin-left: 4em;
+  margin-top: 0.6em;
+  transition: background-color 1s;
+  cursor: pointer;
+}
+
+#submit:hover {
+  background-color: #ffa500;
+}
+
+.fa {
+  color: darkorange;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#features {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+div.feature {
+  display: flex;
+  margin-top: 2em;
+}
+
+div.feature i {
+  flex: 1;
+}
+
+div.feature div.feature-description {
+  flex: 5;
+}
+
+div.feature-description {
+  padding: 0.7em;
+}
+
+#video {
+  width: 50%;
+  display: block;
+  margin: 3em auto;
+}
+
+#pricings {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin: auto;
+}
+
+div.pricing-card {
+  border: 1px solid black;
+  margin: 1em;
+  border-radius: 0.3em;
+}
+
+div.pricing-card h3 {
+  background-color: #ddd;
+  padding: 1em;
+  text-align: center;
+}
+
+.price {
+  display: block;
+  text-align: center;
+  font-weight: 800;
+  font-size: 1.4rem;
+  padding: 0.3em;
+}
+
+div.pricing-card p {
+  text-align: center;
+  width: 80%;
+  margin: auto;
+}
+
+div.pricing-card button {
+  padding: 0.6em 1em;
+  font-size: 1.1rem;
+  display: block;
+  margin: 1.4em auto;
+  background-color: #f1c40f;
+  border: 0;
+  border-radius: 0.1em;
+  transition: background-color 1s;
+  cursor: pointer;
+}
+
+div.pricing-card button:hover {
+  background-color: #ffa500;
+}
+
+footer {
+  background-color: #ddd;
+  width: 80%;
+  margin: 2em auto 0 auto;
+  padding: 1em;
+}
+
+footer ul {
+  display: flex;
+  justify-content: flex-end;
+}
+footer ul li a {
+  text-decoration: none;
+  padding: 1em;
+  color: black;
+}
+footer ul li {
+  list-style-type: none;
+}
+
+#copyright {
+  display: block;
+  text-align: right;
+  padding: 0.3em;
+  color: #444;
+}
+
+@media screen and (max-width: 800px) {
+  #nav-bar {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #nav-bar ul {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #nav-bar ul li a {
+    padding: 0.7em;
+  }
+
+  #pricings {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 600px) {
+  i.fa {
+    display: none;
+  }
+  #header h1 {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-top: 50%;
+  }
+  #video {
+    width: 90%;
+  }
+
+  footer {
+    font-size: 0.8em;
+  }
+
+  .feature-description h2 {
+    font-size: 1.1rem;
+  }
+
+  .feature-description p {
+    font-size: 0.9rem;
+  }
+}
